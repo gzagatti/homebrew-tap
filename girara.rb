@@ -1,6 +1,5 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook.html
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Girara < Formula
   desc "Library that implements a user interface that focuses on simplicity and minimalism."
   homepage "https://pwmt.org/projects/girara/"

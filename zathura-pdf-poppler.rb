@@ -1,6 +1,5 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook.html
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class ZathuraPdfPoppler < Formula
   desc "Adds PDF support to zathura by using the poppler rendering engine."
   homepage "https://pwmt.org/projects/zathura-pdf-poppler/"
