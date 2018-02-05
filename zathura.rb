@@ -18,7 +18,7 @@ class Zathura < Formula
     args = %W[
       PREFIX=#{prefix}
       LOCALEDIR=#{share}/locale
-      PLUGINDIR=#{prefix}/lib
+      PLUGINDIR=#{HOMEBREW_PREFIX}/lib/zathura
     ]
     if build.with? "sqlite3"
       args << %W[WITH_SQLITE=1]
