@@ -6,6 +6,9 @@ class Zathura < Formula
   homepage "https://pwmt.org/projects/zathura/"
   url "https://pwmt.org/projects/zathura/download/zathura-0.3.8.tar.gz"
   sha256 "46bf8558f7ff12efe11bf5d19e6e223aac97126061677199d0c3d53dfcbce537"
+  head "https://git.pwmt.org/pwmt/zathura.git"
+
+
   depends_on "gtk+3"
   depends_on "girara"
   depends_on "intltool" => :build
