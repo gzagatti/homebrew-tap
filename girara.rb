@@ -4,20 +4,32 @@
 class Girara < Formula
   desc "Library that implements a user interface that focuses on simplicity and minimalism."
   homepage "https://pwmt.org/projects/girara/"
+  head "https://git.pwmt.org/pwmt/girara.git"
   url "https://pwmt.org/projects/girara/download/girara-0.2.8.tar.gz"
   sha256 "285905e35375ecbdfe418c6b7735e373d780f76a5b6c90c08db28da9f4d09aa3"
+  depends_on "gtk+3"
+  depends_on "glib"
+  depends_on "pkg-config"
+  depends_on "gettext"
+  depends_on "intltool" => :build
+  depends_on "libnotify" => :optional
+  depends_on "json-c" => :optional
+  #depends_on "check" => :optional
 
   def install
     ENV.deparallelize
-    depends_on "gtk+3"
-    depends_on "glib"
-    depends_on "pkg-config"
-    depends_on "intltool" => :build
-    depends_on "libnotify" => :optional
-    depends_on "json-c" => :optional
-    depends_on "check" => :optional
-    system "make"
-    system "make", "install"
+    args = %W[
+      PREFIX=#{prefix}
+      LOCALEDIR=#{share}/locale
+    ]
+    if build.with? "libnotify"
+      args << %W[WITH_LIBNOTIFY=1]
+    end
+    if build.with? "json-c"
+      args << %W[WITH_JSON=1]
+    end
+    system "make", *args
+    system "make", "install", *args
   end
 
   test do
