@@ -2,8 +2,8 @@ class Zathura < Formula
 
   desc "Highly customizable and functional document viewer."
   homepage "https://pwmt.org/projects/zathura/"
-  url "https://pwmt.org/projects/zathura/download/zathura-0.4.0.tar.xz"
-  sha256 "aa629259c6ac729e90abdda1b9b51854adaa6851192f08a55e63379500541ec8"
+  url "https://pwmt.org/projects/zathura/download/zathura-0.4.3.tar.xz"
+  sha256 "7e12194426d709670e0f4b0b107c80dd21322881b57d4a0bf9a09998402ffd41"
   head "https://git.pwmt.org/pwmt/zathura.git"
 
   depends_on "gtk+3"
