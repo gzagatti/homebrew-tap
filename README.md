@@ -22,6 +22,29 @@ Thanks to
 [zegervdv/homebrew-zathura](https://github.com/zegervdv/homebrew-zathura) 
 for some of the steps.
 
+### Synctex support
+
+At the moment only backward synchronization from Zathura to Neovim is 
+possible. [`neovim-remote`](https://github.com/mhinz/neovim-remote) 
+provides remote functionality to Neovim allowing backward sync.
+
+In order to allow for backward sync start neovim with
+
+```
+nvim -list /tmp/nvimserver
+```
+
+then open the target pdf with Zathura as following
+
+```
+zathura -x "nvr --servername /tmp/nvimserver \
+	--remote +%{line} \"%{input}\"" <file_name>
+```
+
+To navigate from the pdf to the corresponding line in the tex file, `ctrl 
++ click` on the target line in the pdf file. Neovim will magically move to 
+the selected line.
+
 ### Copying to clipboard
 
 Add the following to your `~/.config/zathura/zathurarc`:
