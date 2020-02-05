@@ -8,15 +8,15 @@ This tap contains formulae for [Zathura](https://pwmt.org/projects/zathura/),
 its dependencies (eg. `girara`, `synctex`) and its plugins (eg. 
 `pdf-poppler`). 
 
-`synctex` is sourced directly from [TeX User Group](http://www.tug.org/)
-who are the official maintainers.
-
 Zathura depends on plugins to display different extensions. These plugins 
 need to be located in the correct path for Zathura to find it. Since 
 `brew` does not allow formulae to link each other, I have symlinked 
 Zathura's plugin directory to `usr/local/lib/zathura` and each plugin's 
 dynamic library is then linked to this directory. This solution allows 
-plugins to be installed without interference from users.
+plugins to be installed without input from the user.
+
+`synctex` is sourced directly from [TeX User Group](http://www.tug.org/)
+who are the official maintainers.
 
 Thanks to 
 [zegervdv/homebrew-zathura](https://github.com/zegervdv/homebrew-zathura) 
