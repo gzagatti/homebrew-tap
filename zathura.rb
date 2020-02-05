@@ -6,6 +6,7 @@ class Zathura < Formula
   sha256 "0c3997aafbcdaaae60a4522f208adadfdd2758b432ce94ea16fbcee937cb762c"
   head "https://git.pwmt.org/pwmt/zathura.git"
 
+  depends_on :x11
   depends_on "gtk+3"
   depends_on "girara"
   depends_on "meson"

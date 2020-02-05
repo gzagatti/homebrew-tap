@@ -4,6 +4,7 @@ class ZathuraPdfPoppler < Formula
   url "https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.0.tar.xz"
   sha256 "d5cc3a7dae49471b85b503bbb9049c6f8d10903f4a611d721a2e0fefe726d4ed"
 
+  depends_on :x11
   depends_on "zathura"
   depends_on "poppler"
 
