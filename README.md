@@ -26,7 +26,8 @@ for some of the steps.
 
 At the moment only backward synchronization from Zathura to Neovim is
 possible. [`neovim-remote`](https://github.com/mhinz/neovim-remote)
-provides remote functionality to Neovim allowing backward sync.
+provides remote functionality to Neovim allowing the backward sync operation to
+work.
 
 In order to allow for backward sync start neovim with
 
@@ -44,6 +45,10 @@ zathura -x "nvr --servername /tmp/nvimserver \
 To navigate from the pdf to the corresponding line in the tex file, `ctrl + click`
 on the target line in the pdf file. Neovim will magically move to
 the selected line.
+
+Unfortunately, forward sync is not possible at the moment as Zathura
+communicates via a DBUS interface with the system. This interface does not seem
+to be available in MacOS.
 
 ### Copying to clipboard
 
