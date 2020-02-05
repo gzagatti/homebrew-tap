@@ -8,6 +8,7 @@ class ZathuraPdfPoppler < Formula
   depends_on "poppler"
 
   def install
+    # patch copied from https://github.com/zegervdv/homebrew-zathura/blob/master/zathura-pdf-poppler.rb
     inreplace "meson.build", "zathura.get_pkgconfig_variable('plugindir')", "prefix"
     args = %W[
       --prefix=#{prefix}
