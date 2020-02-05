@@ -40,4 +40,7 @@ Although this is not currently maintained, it was created to
 practicing the exercises in [Learn Vimscript the Hard 
 Way](https://learnvimscriptthehardway.stevelosh.com/).
 
+### References
+
+[Homebrew formula cookbook](https://docs.brew.sh/Formula-Cookbook)
 
