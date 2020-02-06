@@ -5,7 +5,6 @@ class Girara < Formula
   url "https://pwmt.org/projects/girara/download/girara-0.3.4.tar.xz"
   sha256 "51fcda5a50a68fabd461fb4e467a1defd531dafca4f47f6851a9eb56756cb232"
 
-  depends_on :x11
   depends_on "pkg-config"
   depends_on "gtk+3"
   depends_on "gettext"
