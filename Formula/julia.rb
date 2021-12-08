@@ -1,9 +1,9 @@
 class Julia < Formula
   desc "The Julia language"
   homepage "https://julialang.org/"
-  url "https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz"
-  version "1.6.1"
-  sha256 "7c888adec3ea42afbfed2ce756ce1164a570d50fa7506c3f2e1e2cbc49d52506"
+  url "https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.0-linux-x86_64.tar.gz"
+  version "1.7.0"
+  sha256 "7299f3a638aec5e0b9e14eaf0e6221c4fe27189aa0b38ac5a36f03f0dc4c0d40"
   license "MIT"
 
   def install
