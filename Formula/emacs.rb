@@ -18,6 +18,7 @@ class Emacs < Formula
   depends_on "gnutls"
   depends_on "jansson"
   depends_on "imagemagick"
+  depends_on "gtk+3"
 
   uses_from_macos "libxml2"
   uses_from_macos "ncurses"
@@ -27,6 +28,8 @@ class Emacs < Formula
   end
 
   def install
+    # build options are a mix of the options in the original brew formula
+    # and in the apt repo: https://launchpad.net/ubuntu/+source/emacs
     args = %W[
       --disable-silent-rules
       --enable-locallisppath=#{HOMEBREW_PREFIX}/share/emacs/site-lisp
@@ -36,6 +39,11 @@ class Emacs < Formula
       --with-xml2
       --with-modules
       --without-ns
+      --with-x-toolkit=gtk3
+      --without-xaw3d
+      --with-cairo
+      --with-x=yes
+      --with-toolkit-scroll-bars
     ]
 
     if build.head?
