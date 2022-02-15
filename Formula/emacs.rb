@@ -44,6 +44,7 @@ class Emacs < Formula
       --with-cairo
       --with-x=yes
       --with-toolkit-scroll-bars
+      --with-json
     ]
 
     if build.head?
