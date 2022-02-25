@@ -12,7 +12,7 @@ class Nnn < Formula
   uses_from_macos "ncurses"
 
   def install
-    system "make", "install", "PREFIX=#{prefix}", "O_NERD=1"
+    system "make", "install", "PREFIX=#{prefix}", "O_NERD=1", "O_GITSTATUS=1"
     bash_completion.install "misc/auto-completion/bash/nnn-completion.bash"
     zsh_completion.install "misc/auto-completion/zsh/_nnn"
     fish_completion.install "misc/auto-completion/fish/nnn.fish"
