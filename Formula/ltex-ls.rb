@@ -7,11 +7,12 @@ class LtexLs < Formula
   head "https://github.com/valentjn/ltex-ls.git", branch: "develop"
 
   depends_on "maven" => :build
+  depends_on "python@3.9" => :build
   depends_on "openjdk@11"
 
   def install
     ENV["JAVA_HOME"] = Formula["openjdk@11"].opt_prefix
-    system "python", "-u", "tools/createCompletionLists.py"
+    system Formula["python@3.9"].bin/"python3", "-u", "tools/createCompletionLists.py"
     system "mvn", "-B", "-e", "package"
     (buildpath/"build").mkpath
     system "tar", "xzf", "target/ltex-ls-#{version}.tar.gz", "-C", "build"
