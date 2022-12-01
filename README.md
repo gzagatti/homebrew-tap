@@ -5,25 +5,27 @@ Custom Homebrew formulae. Tap the repository: `brew tap gzagatti/tap`.
 Available formulas:
 
 - [Julia](#julia)
-- [Potion](#potion)
+- [Emacs](#emacs)
+- NNN
+- Unicodeit
 
 ## Julia
 
 [Julia](https://julialang.org/) is a programming language geared for scientific
 computing that is fast, dynamic, optionally typed, general, easy to use and
-open source. This tap provides a "cask"-type of formula for Julia. 
+open source. This tap provides a "cask"-type of formula for Julia.
 
-Since `linuxbrew` does not yet have support for Homebrew cask, this tap
+Since `brew` does not yet have support for Homebrew cask for Linux, this tap
 provides a very installation that simply copies the pre-compiled Julia binaries
-in the right place. This formula is only meant to be used with `linuxbrew`.
+in the right place. This formula is only meant to be used in Linux.
 
-## Potion
+## Emacs
 
-This formula installs a compiler for [`potion`](http://perl11.org/potion).
-Although this is not currently maintained, it was created to
-(1) to teach myself how to create a basic Homebrew formula; and (2) for
-practicing the exercises in [Learn Vimscript the Hard
-Way](https://learnvimscriptthehardway.stevelosh.com/).
+A custom Emacs installation.
+
+## NNN
+
+A custom NNN installation.
 
 ## References
 
