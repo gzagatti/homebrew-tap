@@ -12,7 +12,7 @@ Available formulas:
 - [Emacs](./Formula/emacs.rb) : A custom installation.
 
 - [TexLive](./Formula/texlive.rb): A custom TexLive installation. The official
-  Homebrew recipe is too bloated and takes longer to update. I prefer to
+  Homebrew recipe is too bloated and takes too long to update. I prefer to
   maintain my own Formula.
 
 - [NNN](./Formula/nnn.rb) : It is possible to build NNN with different flags to
