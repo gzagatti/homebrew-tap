@@ -1,9 +1,9 @@
 class Texlive < Formula
   desc "Free software distribution for the TeX typesetting system"
   homepage "https://www.tug.org/texlive/"
-  url "https://www.texlive.info/tlnet-archive/2022/05/10/tlnet/install-tl-unx.tar.gz"
-  version "20220510"
-  sha256 "92e904511943cf51f0563f29952b6375423ef3a12e54f20ce16c5afc578b1de1"
+  url "https://www.texlive.info/tlnet-archive/2023/05/02/tlnet/install-tl-unx.tar.gz"
+  version "20230502"
+  sha256 "b05d95bb2fed454758f5c6bedba8789634392d2ce29379953c9451e5f2415ffc"
   head "http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz"
 
   depends_on "wget" => :build
